@@ -1,0 +1,82 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    
+}
+.flex-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../assets/bg.jpg');
+    background-size: cover;
+
+    h1 {
+        margin: 0;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fafafadc;
+        border-radius: 10px;
+        margin: .2em;
+        padding: 2em;
+        min-width: 600px;
+    }
+
+    .card-info {
+        flex-direction: column;
+        .rollover {
+            font-size: 60px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: .5em;
+        }
+        .cta {
+            button {
+                padding: 1em 2em;
+                border: none;
+                text-transform: uppercase;
+                color: white;
+                font-weight: 600;
+                letter-spacing: 2px;
+            }
+    
+            .ingreso {
+                background-color: green;
+            }
+            .egreso {
+                background-color: red;
+            }
+        }
+    }
+
+    .card-lista {
+        height: 400px;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .ingresos, .egresos {
+            width: 50%;
+            text-align: center;
+            border: 1px solid black;
+        }
+    }
+
+    footer {
+        position: absolute;
+        bottom: 1em;
+        color: white;
+
+        a {
+            color: white;
+        }
+    }
+}

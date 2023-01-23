@@ -1,0 +1,112 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../assets/bg.jpg");
+  background-size: cover;
+}
+
+.flex-container h1 {
+  margin: 0;
+}
+
+.flex-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fafafadc;
+  border-radius: 10px;
+  margin: .2em;
+  padding: 2em;
+  min-width: 600px;
+}
+
+.flex-container .card-info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-container .card-info .rollover {
+  font-size: 60px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: .5em;
+}
+
+.flex-container .card-info .cta button {
+  padding: 1em 2em;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.flex-container .card-info .cta .ingreso {
+  background-color: green;
+}
+
+.flex-container .card-info .cta .egreso {
+  background-color: red;
+}
+
+.flex-container .card-lista {
+  height: 400px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex-container .card-lista .ingresos, .flex-container .card-lista .egresos {
+  width: 50%;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.flex-container footer {
+  position: absolute;
+  bottom: 1em;
+  color: white;
+}
+
+.flex-container footer a {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
